@@ -42,6 +42,13 @@ h1 span {
 h2 {
     font-size: 42px;
     margin: 0px;
+    font-weight: 400;
+    color: white;
+    line-height: 45px;
+}
+
+h2 span {
+    font-weight: 700;
 }
 
 h3 {
@@ -68,6 +75,7 @@ button {
     height: 44px;
     border-radius: 50px;
     font-size: 15px;
+    font-weight: 700;
     border: none;
 }
 
@@ -106,4 +114,35 @@ header {
 
 .marketing-tools {
     height: 236px;
+}
+
+.team {
+    padding: 25px 21px 62px 21px;
+}
+
+.team-paragraphs {
+    padding-top: 24px;
+    padding-bottom: 0px;
+}
+
+.team-image {
+    padding: 54px 0px 24px 0px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #0A459E;
+}
+
+.footer {
+    padding: 101px 23px 99px 22px;
+}
+
+.footer-button {
+    color: #0A459E;
+    background-color: #FFBE3C;
+    margin-top: 41px;
 }
