@@ -1,2 +1,37 @@
 /******* LANDING PAGE STYLES *******/
 
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* come back to header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 16px 0px 21px;
+}
+
+button {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* come back to header */
+
+.nav-logo {
+    width: 106px;
+    height: auto;
+}
+
+.nav-button {
+    width: 164px;
+    height: 44px;
+    color: #FFFFFF; 
+    background-color: #2979EC;
+    border-radius: 50px;
+    border: none;
+    font-size: 15px;
+}
