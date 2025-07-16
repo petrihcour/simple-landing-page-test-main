@@ -11,22 +11,28 @@ body {
     margin: 0px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
 
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0px 21px;
     text-align: center;
 }
+
+/* typography */
 
 h1 {
     font-size: 50px;
     padding-top: 78px;
     margin: 0px;
     font-weight: 400;
-    width: 258px;
+    line-height: 52px;
 }
 
 h1 span {
@@ -35,16 +41,24 @@ h1 span {
 
 h2 {
     font-size: 42px;
+    margin: 0px;
 }
 
 h3 {
     font-size: 40px;
+    margin: 0px;
+    font-weight: 400;
+    line-height: 45px;
+}
+
+h3 span {
+    font-weight: 700;
 }
 
 p {
     font-size: 20px;
     font-weight: 400;
-    padding-top: 4px;
+    padding: 24px 0px;
     margin: 0px;
 }
 
@@ -57,7 +71,7 @@ button {
     border: none;
 }
 
-/* come back to header */
+/* navigation */
 
 header {
     display: flex;
@@ -67,11 +81,8 @@ header {
     background-color: #EBF4FF;
 }
 
-/* come back to header */
-
 .nav-logo {
     width: 106px;
-    height: auto;
 }
 
 .nav-button {
@@ -79,10 +90,20 @@ header {
     background-color: #2979EC;
 }
 
-/* come back to header */
+/* hero section */
 
 .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #EBF4FF;
+    padding: 0px 21px 92px 21px;
+}
+
+.tools {
+    padding: 25px 21px;
+}
+
+.marketing-tools {
+    height: 236px;
 }
