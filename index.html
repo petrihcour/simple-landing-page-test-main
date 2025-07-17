@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Landing Page</title>
+    <title>EBQ | Integrated Marketing Services</title>
 
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,17 +18,13 @@
   <body>
     <!--Page Content-->
 
-    <script type="text/javascript">
-      // Event listener JS goes here
-    </script>
-
     <header>
-      <img src="assets/logo-blue-160x160-1.png" alt="logo" class="nav-logo" />
-      <button class="nav-button">CONTACT US</button>
+      <img src="assets/logo-blue-160x160-1.png" alt="ebq company logo" class="nav-logo" />
+      <nav><button class="nav-button">CONTACT US</button></nav>
     </header>
 
     <main>
-      <div class="hero">
+      <section class="hero">
         <h1>Integrated <span>Marketing Services</span></h1>
         <p>
           We turn your marketing plans into action by building on your ideas and
@@ -36,12 +32,12 @@
           department that can pivot to different areas of marketing based on
           your needs.
         </p>
-      </div>
+      </section>
 
-      <div class="tools">
+      <section class="tools">
         <img
           src="assets/Marketing_Tools.svg"
-          alt="marketing icons"
+          alt="icons representing modern marketing tools"
           class="marketing-tools"
         />
         <div class="tools-text">
@@ -57,9 +53,9 @@
             process.
           </p>
         </div>
-      </div>
+      </section>
 
-      <div class="team">
+      <section class="team">
         <div class="team-text">
           <h3><span>The best way</span> to build a marketing team</h3>
           <p class="team-paragraphs">
@@ -79,7 +75,7 @@
           alt="photo of team with block color border"
           class="team-image"
         />
-      </div>
+      </section>
     </main>
 
     <footer>
@@ -88,5 +84,15 @@
         <button class="footer-button">CONTACT US</button>
       </div>
     </footer>
+
+    <script type="text/javascript">
+      const buttons = document.querySelectorAll(".nav-button, .footer-button");
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          alert("Thanks! We'll be in touch soon.");
+        });
+      });
+    </script>
   </body>
 </html>
