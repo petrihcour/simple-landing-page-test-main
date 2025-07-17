@@ -108,15 +108,25 @@ header {
     padding: 0px 21px 92px 21px;
 }
 
+/* tools section */
+
 .tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 25px 21px;
 }
 
 .marketing-tools {
-    height: 236px;
+    padding: 40px 0 40px 0;
 }
 
+/* team section */
+
 .team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 25px 21px 62px 21px;
 }
 
@@ -128,6 +138,8 @@ header {
 .team-image {
     padding: 54px 0px 24px 0px;
 }
+
+/* footer */
 
 footer {
     display: flex;
@@ -145,4 +157,80 @@ footer {
     color: #0A459E;
     background-color: #FFBE3C;
     margin-top: 41px;
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 1280px) {
+
+    main {
+        text-align: left;
+    }
+    
+    header {
+        padding: 19px 55px 0px 55px;
+    }
+
+    /* typography */
+
+    h1 {
+        width: 45%;
+    }
+
+    /* hero section */
+    
+    .hero {
+        align-items: start;
+        padding: 50px 154px 100px;
+    }
+
+    .hero p {
+        width: 48%;
+    }
+
+    /* tools section */
+
+    .tools {
+        flex-direction: row;
+        justify-content: center;
+        padding: 140px 154px;
+        gap: 89px;
+    }
+
+    .tools-text {
+        order: 1;
+    }
+
+    .tools-text p {
+        padding: 16px 0px;
+    }
+
+    .marketing-tools {
+        order: 2;
+    }
+
+    /* team section */
+
+    .team {
+        flex-direction: row;
+        justify-content: center;
+        padding: 0px 154px 129px;
+        gap: 89px;
+    }
+
+    .team-text {
+        order: 2;
+    }
+
+    .team-text h3 {
+        padding-bottom: 40px;
+    }
+
+    .team-image {
+        width: auto;
+        height: 446px;
+        order: 1;
+        padding: 0px;
+    }
 }
